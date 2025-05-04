@@ -205,6 +205,8 @@ a:focus, a:hover {
   margin-left: auto;
   padding-right: var(--grid-margin);
   padding-left: var(--grid-margin);
+  background-color: black;
+  color: white;
 }
 
 .o-ratio {
@@ -407,6 +409,7 @@ a:focus, a:hover {
 .o-text.-medium {
   font-size: var(--font-size-medium);
   line-height: 1.2;
+  color: white;
 }
 @media (min-width: 1025px) {
   .o-text.-padding-right\@from-medium {
@@ -4665,6 +4668,7 @@ html:not(.has-menu-opened) .c-menu {
   width: 100%;
   mix-blend-mode: difference;
   z-index: 10;
+  background-color: transparent;
 }
 
 .c-home-hero_background {
@@ -4705,6 +4709,7 @@ html:not(.has-menu-opened) .c-menu {
   top: 0.5em;
   right: 0;
   width: calc((100vw - var(--grid-gutter) * (var(--grid-columns) - 1) - var(--grid-margin) * 2) * 2 / var(--grid-columns) + var(--grid-gutter) * (2 + -1));
+  color: white;
 }
 
 .c-home-summary_inner {
@@ -4731,6 +4736,7 @@ html:not(.has-menu-opened) .c-menu {
 
 .c-home-summary_text {
   position: relative;
+  color: white;
 }
 .c-home-summary_text span {
   z-index: 10;
@@ -4799,10 +4805,12 @@ html:not(.has-menu-opened) .c-menu {
 
 .c-home-summary_link {
   min-width: 0;
+  color: white;
 }
 
 .c-home-about_title {
   margin-bottom: 10px;
+  color: white; 
 }
 
 @media (min-width: 700px) {
@@ -4969,6 +4977,7 @@ html:not(.has-menu-opened) .c-menu {
   line-height: 1;
   text-align: center;
   flex-grow: 1;
+  color: white;
 }
 .c-featured-links_title > span {
   display: inline-block;
@@ -5970,11 +5979,13 @@ html:not(.has-menu-opened) .c-menu {
 
 .c-footer_nav {
   grid-column: 1/-1;
+  color: white;
 }
 @media (hover: hover) {
   .c-footer_nav a:hover, .c-footer_nav a.focus-visible {
     text-decoration: underline;
     text-decoration-thickness: var(--border-size);
+    color: white;
   }
 }
 
@@ -6103,6 +6114,7 @@ html:not(.has-menu-opened) .c-menu {
   margin-bottom: 0;
   font-size: var(--footer-coords-size);
   font-family: "LocomotiveNew", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  color: white; 
 }
 @media (max-width: 1399px) {
   .c-footer_coords {
@@ -6140,12 +6152,14 @@ html:not(.has-menu-opened) .c-menu {
 @media (min-width: 1025px) {
   .c-footer_copyright {
     grid-column: 11/13;
+    color: white;
   }
 }
 @media (min-width: 1025px) {
   .c-footer_copyright {
     align-self: end;
     justify-self: end;
+    color: white;
   }
 }
 @media (max-width: 1024px) {
@@ -7954,6 +7968,7 @@ html:not(.has-menu-opened) .c-menu {
   --font-size-h1: 4.6666666667rem;
   --font-size-h2: 2.5333333333rem;
   --font-size-h3: 2.1333333333rem;
+  color: white;
 }
 @media (max-width: 1024px) {
   .c-wysiwyg.-text-large {

@@ -780,6 +780,22 @@ html:not(.is-first-loading) .c-preloader {
     transform: scale(1.1) translate3d(0, 0, 0);
   }
 }
+
+.c-home-summary_visual {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.c-home-summary_video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+    transform: scale(calc(0.8 + 0.2 * var(--progress)));
+   
+}
             </style>
         
         <link id="main-css" rel="stylesheet" href="assets/styles/main.css%3Fv=1745492683973.css" media="print" onload="this.media='all'; this.onload=null; this.isLoaded=true">
@@ -962,52 +978,18 @@ html:not(.is-first-loading) .c-preloader {
                 </div>
 
                                                         <div class="c-home-hero_background">
-                         
-  
-
-
-
-
-
-<div class="c-video c-home-hero_video">
-    
-            <div class="o-ratio u-16:9"></div>
-    
-            <video
-            class="c-video_media"
-            playsinline
-            muted
-            loop
-            data-module-video-inview
-                            data-video-inview-list="[{&quot;desktop&quot;:{&quot;src&quot;:&quot;https:\/\/player.vimeo.com\/progressive_redirect\/playback\/792718372\/rendition\/1080p\/file.mp4?loc=external&amp;log_user=0&amp;signature=978abf9e4b33e3e143901fbcbf68e159d90d5eeb95ed25f8378d341514009cf8&quot;,&quot;poster&quot;:&quot;uploads\/home\/dynasty1.jpeg&quot;},&quot;mobile&quot;:{&quot;src&quot;:&quot;https:\/\/player.vimeo.com\/progressive_redirect\/playback\/792718372\/rendition\/1080p\/file.mp4?loc=external&amp;log_user=0&amp;signature=978abf9e4b33e3e143901fbcbf68e159d90d5eeb95ed25f8378d341514009cf8&quot;,&quot;poster&quot;:&quot;uploads\/home\/dynasty1.jpeg&quot;}}]"
-                        data-scroll
-            data-scroll-repeat
-            data-scroll-call="toggle, VideoInview"
-        >
-                                            <script>
-                    var video = document.currentScript.parentNode
-                    var list = video.dataset.videoInviewList
-                    if(list) {
-                        list = JSON.parse(list);
-                        var pickIndex = Math.floor(Math.random()*list.length);
-                        var pick = list[pickIndex];
-
-                        video.poster = pick.desktop.poster
-                        if(pick.mobile.poster) video.poster = window.matchMedia("(max-width: 699px)").matches ? pick.mobile.poster : pick.desktop.poster
-
-                        var sources = [];
-                        if (pick.mobile.src) {
-                            sources.push(`<source src="https://locomotive.ca/${pick.mobile.src}" type="video/mp4" media="(max-width: 699px)"/>`)
-                        }
-                        sources.push(`<source src="https://locomotive.ca/${pick.desktop.src}" type="video/mp4" />`)
-
-                        video.innerHTML = sources.join('');
-                        video.removeAttribute('data-video-inview-list');
-                    }
-                </script>
-                    </video>
+    <div class="c-image c-home-hero_image">
+        <span class="c-image_inner" style="background-image: url('35.jpeg');">
+            <img
+                class="c-image_img"
+                alt="Hero background"
+                width="1920"
+                height="1080"
+                src="35.jpeg"
+            >
+        </span>
     </div>
-                    </div>
+</div>
                             </div>
         
         <div class="o-container">
@@ -1023,7 +1005,17 @@ html:not(.is-first-loading) .c-preloader {
                                                 <span>2018-2023</span>
                                             </p>
 
-                    <div data-module-ring data-scroll data-scroll-css-progress data-scroll-module-progress class="c-home-summary_visual || c-ring">
+                    <div class="c-home-summary_visual">
+                        <video 
+                            id="scrollVideo"
+                            src="smoky.mp4"
+                            muted
+                            playsinline
+                            data-scroll
+                            data-scroll-css-progress
+                            data-scroll-module-progress
+                            class="c-home-summary_video"
+                        ></video>
                     </div>
 
                     <span class="c-home-summary_footer">
@@ -1265,7 +1257,7 @@ html:not(.is-first-loading) .c-preloader {
                                     </div>
 
                                     <a
-                        href="en/work.html"
+                        href="porfolio.html"
                         class="c-featured-links_link"
                         >
                         See all projects
@@ -1275,7 +1267,7 @@ html:not(.is-first-loading) .c-preloader {
 </section>
 
             <div class="c-home-about || u-margin -small-top">
-                <div class="c-heading -h1 || c-home-about_title"><span aria-hidden="true">🔰</span>Design and code are only tools of expression. What sets us and our work apart is people. We’re a small group of creative thinkers who craft bespoke digital-first brand identities and experiences, tailor-made for you and your audience.<span aria-hidden="true">🔛🔜</span></div>
+                <div class="c-heading -h1 || c-home-about_title"><span aria-hidden="true">🔰</span>Design and code are only tools of expression. What sets us and our work apart is people. We're a small group of creative thinkers who craft bespoke digital-first brand identities and experiences, tailor-made for you and your audience.<span aria-hidden="true">🔛🔜</span></div>
 
                 <div class="o-grid -col-12@from-medium -col-8@from-small -col-4@to-small -gutters">
                     <div class="o-grid_item u-gc-2/5@from-small u-gc-3/7@from-medium">
@@ -1324,7 +1316,7 @@ html:not(.is-first-loading) .c-preloader {
                 </div>
             </div>
 
-            <section class="c-home-extras || u-margin -big-top -big-bottom">
+            <!--<section class="c-home-extras || u-margin -big-top -big-bottom">
                 <h2 class="c-home-extras_title || c-heading -h1">
                     <span>Extras</span>
                     <span>(13)</span>
@@ -1558,7 +1550,7 @@ html:not(.is-first-loading) .c-preloader {
                     </div>
                 </div>
             </section>
-        </div>
+        </div>-->
     
                             <footer class="c-footer">
     <nav class="c-footer_nav">
@@ -1794,5 +1786,51 @@ html:not(.is-first-loading) .c-preloader {
 
         <script src="assets/scripts/vendors.js%3Fv=1745492683973" defer></script>
         <script src="assets/scripts/app.js%3Fv=1745492683973" defer></script>
+        <script>
+          const scrollVideo = document.getElementById('scrollVideo');
+          if (scrollVideo) {
+              let lastScrollY = window.scrollY;
+              let isPlaying = false;
+              let scrollTimeout;
+              const SCROLL_TIMEOUT = 100; // Time in ms to wait before pausing after scroll stops
+      
+              function updateVideoPlayback() {
+                  const currentScrollY = window.scrollY;
+                  const scrollDelta = currentScrollY - lastScrollY;
+      
+                  // Clear any existing timeout
+                  clearTimeout(scrollTimeout);
+      
+                  // Set playback direction based on scroll
+                  if (scrollDelta > 0) {
+                      scrollVideo.playbackRate = 1; // Play forward
+                  } else if (scrollDelta < 0) {
+                      scrollVideo.playbackRate = -1; // Play backward
+                  }
+      
+                  if (!isPlaying) {
+                      scrollVideo.play();
+                      isPlaying = true;
+                  }
+      
+                  lastScrollY = currentScrollY;
+      
+                  // Set timeout to pause video when scrolling stops
+                  scrollTimeout = setTimeout(() => {
+                      if (isPlaying) {
+                          scrollVideo.pause();
+                          isPlaying = false;
+                      }
+                  }, SCROLL_TIMEOUT);
+              }
+      
+              scrollVideo.addEventListener('loadedmetadata', () => {
+                  scrollVideo.currentTime = 0;
+              });
+      
+              // Only listen to scroll events
+              window.addEventListener('scroll', updateVideoPlayback, { passive: true });
+          }
+      </script>
     </body>
 </html>
