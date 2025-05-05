@@ -4037,7 +4037,7 @@ html[data-theme=primary] #cc-main {
 
 .c-website-cta_content, .c-work-single-pitch_content, .c-featured-links_title, .c-heading.-huge, .-huge.c-indent-paragraph_content, .-huge.c-footer_coords, .-huge.c-about-head_heading {
   font-size: var(--font-size-huge);
-  font-family: "LocomotiveNew", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: "StavokGrotesque-Light", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 .c-website-cta_content a, .c-work-single-pitch_content a, .c-featured-links_title a, .c-heading.-huge a, .-huge.c-indent-paragraph_content a, .-huge.c-footer_coords a, .-huge.c-about-head_heading a {
   display: inline-block;
@@ -4054,7 +4054,7 @@ html[data-theme=primary] #cc-main {
 
 .c-indent-paragraph_content, .c-heading.-h1, .-h1.c-website-cta_content, .-h1.c-work-single-pitch_content, .-h1.c-footer_coords, .-h1.c-about-head_heading {
   font-size: var(--font-size-h1);
-  font-family: "LocomotiveNew", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: "StavokGrotesque-Light", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
 
 .c-heading.-h2, .-h2.c-indent-paragraph_content, .-h2.c-website-cta_content, .-h2.c-work-single-pitch_content, .-h2.c-footer_coords, .-h2.c-about-head_heading {
@@ -6113,7 +6113,7 @@ html:not(.has-menu-opened) .c-menu {
   --footer-coords-size: var(--font-size-h1);
   margin-bottom: 0;
   font-size: var(--footer-coords-size);
-  font-family: "LocomotiveNew", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: "StavokGrotesque-Light", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   color: white; 
 }
 @media (max-width: 1399px) {
